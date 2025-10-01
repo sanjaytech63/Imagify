@@ -46,12 +46,12 @@ const Sidebar = ({ activeNav, setActiveNav, darkMode, toggleDarkMode }: SidebarP
         ))}
       </nav>
 
-      <div className="pt-6 mt-6 border-t border-gray-200 dark:border-gray-700">
+      <div  className="pt-6 mt-6 border-t border-gray-200 dark:border-gray-700">
         <div className="flex items-center justify-between">
           <span className="text-gray-600 dark:text-gray-400">Dark Mode</span>
-          <button
+          <button disabled
             onClick={toggleDarkMode}
-            className={`relative inline-flex h-6 w-11 items-center rounded-full transition-colors ${
+            className={`relative inline-flex cursor-not-allowed h-6 w-11 items-center rounded-full transition-colors ${
               darkMode ? 'bg-purple-600' : 'bg-gray-300'
             }`}
           >
