@@ -11,7 +11,6 @@ interface SidebarProps {
 
 const navItems: NavItem[] = [
   { id: 'home', label: 'Home', icon: '🏠' },
-  { id: 'settings', label: 'Settings', icon: '⚙️' },
 ]
 
 const Sidebar = ({ activeNav, setActiveNav, darkMode, toggleDarkMode }: SidebarProps) => {

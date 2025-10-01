@@ -10,10 +10,10 @@ interface TopNavbarProps {
   setSearchQuery: (query: string) => void
 }
 
-const TopNavbar = ({ 
-  darkMode, 
-  toggleDarkMode, 
-  setShowUploadSection, 
+const TopNavbar = ({
+  darkMode,
+  toggleDarkMode,
+  setShowUploadSection,
   setMobileSidebarOpen,
   searchQuery,
   setSearchQuery
@@ -29,13 +29,13 @@ const TopNavbar = ({
   }
 
   return (
-    <motion.header 
+    <motion.header
       initial={{ y: -10, opacity: 0 }}
       animate={{ y: 0, opacity: 1 }}
       className="bg-white/80 dark:bg-gray-800/80 backdrop-blur-lg rounded-3xl shadow-lg m-4 p-4 flex items-center justify-between"
     >
       <div className="flex items-center">
-        <button 
+        <button
           className="md:hidden mr-4 p-2 rounded-2xl bg-white/50 dark:bg-gray-700/50"
           onClick={() => setMobileSidebarOpen(true)}
         >
@@ -76,7 +76,7 @@ const TopNavbar = ({
           <span className="sm:hidden">📤</span>
         </motion.button>
 
-        <button className="relative p-2 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
+        {/* <button className="relative p-2 text-gray-600 dark:text-gray-300 hover:text-purple-600 dark:hover:text-purple-400">
           <span className="text-xl">🔔</span>
           <span className="absolute top-0 right-0 w-2 h-2 bg-red-500 rounded-full"></span>
         </button>
@@ -86,13 +86,13 @@ const TopNavbar = ({
           className="p-2 rounded-2xl bg-white/50 dark:bg-gray-700/50 text-gray-600 dark:text-gray-300"
         >
           {darkMode ? '☀️' : '🌙'}
-        </button>
+        </button> */}
 
         <div className="flex items-center space-x-3">
           <div className="w-10 h-10 rounded-xl overflow-hidden border-2 border-purple-500">
-            <img 
-              src="photo.jpg" 
-              alt="Profile" 
+            <img
+              src="photo.jpg"
+              alt="Profile"
               className="w-full h-full object-cover"
             />
           </div>
